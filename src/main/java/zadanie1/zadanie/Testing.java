@@ -42,7 +42,7 @@ public class Testing {
 		System.out.println("liczby ktore powinny sie znalezc w tablicy wyjsciowej: " + output);
 
 		System.out.println("liczby zwrocone przez metodę: " + app.arrayFiltering(input));
-		Assert.assertEquals(app.arrayFiltering(input), output);	//porównaniue obu posortowanych tablic z liczbami
+		Assert.assertEquals(app.arrayFiltering(input), output);	//porownanie obu posortowanych tablic z liczbami
 	}
 
 	@Test
