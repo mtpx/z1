@@ -32,17 +32,17 @@ public class Testing {
 		input.add(-1);
 		input.add(121);
 		input.add(5);
-		Collections.sort(input);	//sortowanie tablicy (w przypadku braku sortowania test mógłby dać nieprawidłowy wynik)
+		Collections.sort(input);
 		System.out.println("liczby w tablicy wejściowej: " + input);
 		output = new ArrayList<Integer>();
 		output.add(2);
 		output.add(4);
 		output.add(66);
-		Collections.sort(output);	//sortowanie tablicy
+		Collections.sort(output);	
 		System.out.println("liczby ktore powinny sie znalezc w tablicy wyjsciowej: " + output);
 
 		System.out.println("liczby zwrocone przez metodę: " + app.arrayFiltering(input));
-		Assert.assertEquals(app.arrayFiltering(input), output);
+		Assert.assertEquals(app.arrayFiltering(input), output);	//porównaniue obu posortowanych tablic z liczbami
 	}
 
 	@Test
